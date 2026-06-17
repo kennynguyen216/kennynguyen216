@@ -1,6 +1,8 @@
-# Hi, I'm Ken Nguyen
+# Hi, I'm Kenny
 
-I like building projects that cross the line between software and the physical world: game systems, hardware prototypes, computer vision tools, AI assistants, and graphics experiments. A lot of my work starts as a prototype, but I care about turning rough ideas into projects that are readable, demoable, and useful to learn from.
+I love building things. Most of my favorite projects start with a random idea, a problem I want to solve, or something I just want to understand better. I like making projects that mix software with the physical world: game systems, Arduino prototypes, computer vision tools, AI assistants, and graphics experiments.
+
+A lot of what I build starts as a prototype, but I care about cleaning it up, documenting what I learned, and turning it into something other people can understand.
 
 ## Featured Projects
 
@@ -37,4 +39,3 @@ Python, C++, C#, JavaScript, Arduino, Unity, OpenCV, Git, CMake, and web fundame
 ## Current Focus
 
 Right now I am building a stronger project portfolio by documenting my prototypes, cleaning up code, and pushing projects that show how I think through real problems.
-
