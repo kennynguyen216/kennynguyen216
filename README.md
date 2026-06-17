@@ -4,25 +4,14 @@ I love building things. Most of my favorite projects start with a random idea, a
 
 A lot of what I build starts as a prototype, but I care about cleaning it up, documenting what I learned, and turning it into something other people can understand.
 
-## Featured Projects
+## Featured Builds
 
-### Jarvis Vision Assistant
-
-Voice-controlled vision assistant built with Python, OpenCV, Gemini, text-to-speech, and Arduino pan/tilt servo control.
-
-[View project](https://github.com/kennynguyen216/Jarvis)
-
-### Haptic Recoil Feedback System
-
-Hardware feedback prototype that maps mouse input and weapon profiles to solenoid recoil pulses through an Arduino serial protocol.
-
-[View project](https://github.com/kennynguyen216/Recoil)
-
-### C++ Ray Tracer
-
-Learning-focused renderer built from first principles while working through _Ray Tracing in One Weekend_.
-
-[View project](https://github.com/kennynguyen216/raytracer)
+| Project | What it shows |
+|---|---|
+| [Jarvis Vision Assistant](https://github.com/kennynguyen216/Jarvis) | AI vision, voice control, OpenCV, Gemini, and Arduino pan/tilt control. |
+| [Haptic Recoil Feedback System](https://github.com/kennynguyen216/Recoil) | Hardware prototyping, serial communication, haptics, OCR, and real-time input. |
+| [C++ Ray Tracer](https://github.com/kennynguyen216/raytracer) | C++, graphics math, rendering fundamentals, CMake, and first-principles implementation. |
+| [Alfred AI Student Assistant](https://github.com/kennynguyen216/springAI2026) | ASP.NET Core, SQLite, Ollama, multi-agent workflows, RAG, and local AI tooling. |
 
 ## What I'm Into
 
