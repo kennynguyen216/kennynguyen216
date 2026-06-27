@@ -10,7 +10,7 @@ A lot of what I build starts as a prototype, but I care about cleaning it up, do
 |---|---|
 | [Jarvis Vision Assistant](https://github.com/kennynguyen216/Jarvis) | AI vision, voice control, OpenCV, Gemini, and Arduino pan/tilt control. |
 | [Haptic Recoil Feedback System](https://github.com/kennynguyen216/Recoil) | Hardware prototyping, serial communication, haptics, OCR, and real-time input. |
-| [C++ Ray Tracer](https://github.com/kennynguyen216/raytracer) | C++, graphics math, antialiasing, diffuse/metal/glass materials, refraction, defocus blur, recursive ray scattering, and CMake. |
+| [C++ Ray Tracer](https://github.com/kennynguyen216/raytracer) | Finished Ray Tracing in One Weekend milestone with C++, antialiasing, glass/metal materials, defocus blur, recursive scattering, and CMake. |
 | [Alfred AI Student Assistant](https://github.com/kennynguyen216/Alfred-AI-Student-Assistant) | ASP.NET Core, SQLite, Ollama, multi-agent workflows, RAG, and local AI tooling. |
 | [3 Minutes To Rage](https://github.com/liangricky7/tspmo3-3MinutesToRage/tree/gametrackstate) | Unity3D gameplay systems, voice-driven mechanics, shaders, and hackathon development. |
 
