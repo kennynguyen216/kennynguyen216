@@ -1,19 +1,19 @@
 # Hi, I'm Kenny
 
-I'm a builder who likes turning messy ideas into working projects. I am especially interested in software that connects to something visual, physical, or interactive: computer vision tools, Arduino prototypes, AI assistants, game systems, graphics experiments, and simulation projects.
+I'm a rising senior who loves to build things for the sake of just building. I am especially interested in software that connects to something visual, physical, or interactive: computer vision tools, Arduino prototypes, AI assistants, game systems, graphics experiments, and simulation projects.
 
-Most of my projects start as a question I want to answer or a system I want to understand better. I care about getting things working first, then cleaning them up, documenting the process, and turning the project into something another developer can actually follow.
+Most of my projects start off as an outlandish idea from which I try my best to put forth into reality. 
 
 ## What I'm Working On
 
 ```text
-SigmaNova
-A C++/OpenGL supernova visualization project focused on real-time graphics,
-volumetric rendering, shaders, and physically inspired simulation.
+-SigmaNova
+  A C++/OpenGL supernova visualization project focused on real-time graphics,
+  volumetric rendering, shaders, and physically inspired simulation.
 
-Portfolio Cleanup
-Documenting older prototypes, improving READMEs, and turning working demos
-into stronger public projects.
+-Employment...
+
+
 ```
 
 ## Featured Projects
@@ -45,6 +45,6 @@ Arduino    OpenCV     SQLite      ASP.NET Core
 
 ## Current Direction
 
-Right now I am building a stronger project portfolio by focusing on projects that show how I think through real problems: starting from fundamentals, learning the tools, building the first working version, then improving the design and documentation.
+Right now I am building projects for the sake of building projects and expanding my craft. 
 
 I am currently spending more time with C++, graphics programming, and real-time simulation.
