@@ -46,12 +46,10 @@ The goal is simple: create cool projects, even when I have never done anything r
 
 ## Technical Interests
 
-- Graphics programming and visual simulation
-- AI-assisted tools using speech, vision, and automation
-- Hardware/software projects with sensors, cameras, and Arduino
+- Graphics programming and simulation
+- Hardware projects and computer vision
 - Game development and interactive systems
-- C++ systems projects with CMake and practical build tooling
-- Turning prototypes into readable, documented repositories
+- C#, .NET, and backend application development
 
 ## Tools And Languages
 
