@@ -24,7 +24,7 @@ Most of my projects start off as an outlandish idea from which I try my best to 
 | [Haptic Recoil Feedback System](https://github.com/kennynguyen216/Recoil) | Hardware prototyping, serial communication, haptics, OCR, and real-time input. |
 | [C++ Ray Tracer](https://github.com/kennynguyen216/raytracer) | C++, CMake, recursive ray tracing, materials, antialiasing, defocus blur, and image generation. |
 | [Alfred AI Student Assistant](https://github.com/kennynguyen216/Alfred-AI-Student-Assistant) | ASP.NET Core, SQLite, Ollama, multi-agent workflows, RAG, and local AI tooling. |
-| [SigmaNova](https://github.com/kennynguyen216/SigmaNova) | C++/OpenGL graphics programming, GLFW, GLAD, GLM, and real-time simulation foundations. |
+| [SigmaNova](https://github.com/kennynguyen216/SigmaNova) | C++/OpenGL graphics programming, GLFW, GLAD, GLM, and real-time simulation foundations. (NOT CLOSE TO FINISHING AS OF RN) |
 
 ## Technical Interests
 
