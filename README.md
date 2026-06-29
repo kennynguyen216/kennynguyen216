@@ -4,6 +4,24 @@ I'm a rising senior who loves to build things for the sake of just building. I a
 
 Most of my projects start off as an outlandish idea from which I try my best to put forth into reality. 
 
+## Aestas Mirabilis
+
+Aestas Mirabilis is a summer challenge between me and my friends: each of us has to build five projects before the summer ends.
+
+For me, I love building cool stuff. A lot of these projects started in areas I had barely touched before: Arduino hardware, C++ graphics programming, ray tracing, haptics, computer vision, and real-time simulation. That is the point. I like stepping into unfamiliar territory, figuring things out as I go, and turning the learning process into something real.
+
+My five projects are:
+
+| Project | Status |
+|---|---|
+| [JARVIS](https://github.com/kennynguyen216/Jarvis) | Finished |
+| [Ray Tracer](https://github.com/kennynguyen216/raytracer) | Finished, with room to expand |
+| [Recoil System](https://github.com/kennynguyen216/Recoil) | Finished |
+| Non-Euclidean Demo in Unreal Engine | Planned / In Progress |
+| [SigmaNova](https://github.com/kennynguyen216/SigmaNova) | In Progress |
+
+The goal is simple: create cool projects, even when I have never done anything remotely close to them before. I enjoy grinding to make my projects real, learning fast, and turning unfamiliar ideas into finished work.
+
 ## What I'm Working On
 
 ```text
