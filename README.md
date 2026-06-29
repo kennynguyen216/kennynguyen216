@@ -1,31 +1,50 @@
 # Hi, I'm Kenny
 
-I love building things. Most of my favorite projects start with a random idea, a problem I want to solve, or something I just want to understand better. I like making projects that mix software with the physical world: game systems, Arduino prototypes, computer vision tools, AI assistants, and graphics experiments.
+I'm a builder who likes turning messy ideas into working projects. I am especially interested in software that connects to something visual, physical, or interactive: computer vision tools, Arduino prototypes, AI assistants, game systems, graphics experiments, and simulation projects.
 
-A lot of what I build starts as a prototype, but I care about cleaning it up, documenting what I learned, and turning it into something other people can understand.
+Most of my projects start as a question I want to answer or a system I want to understand better. I care about getting things working first, then cleaning them up, documenting the process, and turning the project into something another developer can actually follow.
 
-## Featured Builds
+## What I'm Working On
 
-| Project | What it shows |
+```text
+SigmaNova
+A C++/OpenGL supernova visualization project focused on real-time graphics,
+volumetric rendering, shaders, and physically inspired simulation.
+
+Portfolio Cleanup
+Documenting older prototypes, improving READMEs, and turning working demos
+into stronger public projects.
+```
+
+## Featured Projects
+
+| Project | Focus |
 |---|---|
 | [Jarvis Vision Assistant](https://github.com/kennynguyen216/Jarvis) | AI vision, voice control, OpenCV, Gemini, and Arduino pan/tilt control. |
 | [Haptic Recoil Feedback System](https://github.com/kennynguyen216/Recoil) | Hardware prototyping, serial communication, haptics, OCR, and real-time input. |
-| [C++ Ray Tracer](https://github.com/kennynguyen216/raytracer) | Finished Ray Tracing in One Weekend milestone with C++, antialiasing, glass/metal materials, defocus blur, recursive scattering, and CMake. |
+| [C++ Ray Tracer](https://github.com/kennynguyen216/raytracer) | C++, CMake, recursive ray tracing, materials, antialiasing, defocus blur, and image generation. |
 | [Alfred AI Student Assistant](https://github.com/kennynguyen216/Alfred-AI-Student-Assistant) | ASP.NET Core, SQLite, Ollama, multi-agent workflows, RAG, and local AI tooling. |
-| [3 Minutes To Rage](https://github.com/liangricky7/tspmo3-3MinutesToRage/tree/gametrackstate) | Unity3D gameplay systems, voice-driven mechanics, shaders, and hackathon development. |
+| [SigmaNova](https://github.com/kennynguyen216/SigmaNova) | C++/OpenGL graphics programming, GLFW, GLAD, GLM, and real-time simulation foundations. |
 
-## What I'm Into
+## Technical Interests
 
-- Hardware/software projects with Arduino, sensors, cameras, and serial communication.
-- AI-assisted tools that use speech, vision, and automation.
-- Game development and interactive systems.
-- Graphics programming, simulation, and visual experiments.
-- Building messy prototypes, then cleaning them up into something other people can understand.
+- Graphics programming and visual simulation
+- AI-assisted tools using speech, vision, and automation
+- Hardware/software projects with sensors, cameras, and Arduino
+- Game development and interactive systems
+- C++ systems projects with CMake and practical build tooling
+- Turning prototypes into readable, documented repositories
 
-## Tools and Languages
+## Tools And Languages
 
-Python, C++, C#, JavaScript, Arduino, Unity, OpenCV, Git, CMake, and web fundamentals.
+```text
+C++        C#         Python      JavaScript
+OpenGL     CMake      Git         Unity
+Arduino    OpenCV     SQLite      ASP.NET Core
+```
 
-## Current Focus
+## Current Direction
 
-Right now I am building a stronger project portfolio by documenting my prototypes, cleaning up code, and pushing projects that show how I think through real problems.
+Right now I am building a stronger project portfolio by focusing on projects that show how I think through real problems: starting from fundamentals, learning the tools, building the first working version, then improving the design and documentation.
+
+I am currently spending more time with C++, graphics programming, and real-time simulation.
