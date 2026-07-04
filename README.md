@@ -4,35 +4,17 @@ I'm a rising senior who loves to build things for the sake of just building. I a
 
 Most of my projects start off as an outlandish idea from which I try my best to put forth into reality. 
 
-## Aestas Mirabilis
-
-Aestas Mirabilis is a summer challenge between me and my friends: each of us has to build five projects before the summer ends.
-
-For me, I love building cool stuff. A lot of these projects started in areas I had barely touched before: Arduino hardware, C++ graphics programming, ray tracing, haptics, computer vision, and real-time simulation. That is the point. I like stepping into unfamiliar territory, figuring things out as I go, and turning the learning process into something real.
-
-My five projects are:
-
-| Project | Status |
-|---|---|
-| [JARVIS](https://github.com/kennynguyen216/Jarvis) | Finished |
-| [Ray Tracer](https://github.com/kennynguyen216/raytracer) | Finished, with room to expand |
-| [Recoil System](https://github.com/kennynguyen216/Recoil) | Finished |
-| Non-Euclidean Demo in Unreal Engine | Planned / In Progress |
-| [SigmaNova](https://github.com/kennynguyen216/SigmaNova) | In Progress |
-
-The goal is simple: create cool projects, even when I have never done anything remotely close to them before. I enjoy grinding to make my projects real, learning fast, and turning unfamiliar ideas into finished work.
-
 ## What I'm Working On
 
-```text
--SigmaNova
-  A C++/OpenGL supernova visualization project focused on real-time graphics,
-  volumetric rendering, shaders, and physically inspired simulation.
+### SigmaNova
 
--Employment...
+<img width="1914" height="970" alt="volumetricGasdemo" src="https://github.com/user-attachments/assets/9ba18ee6-ee15-4e51-9af3-84df13bcb99c" />
 
+SigmaNova is a C++/OpenGL supernova visualization project focused on real-time graphics, shaders, volumetric rendering, and physically inspired simulation. The current build renders a procedural red-giant gas volume above a mesh-rendered spacetime fabric, with camera-controlled rays, raymarched density, value-noise gas, corona glow, and additive blending over the grid.
 
-```
+### Employment
+
+I am also looking for software engineering opportunities where I can keep building practical systems across graphics, simulation, AI tools, hardware, backend development, or interactive software.
 
 ## Featured Projects
 
@@ -42,7 +24,7 @@ The goal is simple: create cool projects, even when I have never done anything r
 | [Haptic Recoil Feedback System](https://github.com/kennynguyen216/Recoil) | Hardware prototyping, serial communication, haptics, OCR, and real-time input. |
 | [C++ Ray Tracer](https://github.com/kennynguyen216/raytracer) | C++, CMake, recursive ray tracing, materials, antialiasing, defocus blur, and image generation. |
 | [Alfred AI Student Assistant](https://github.com/kennynguyen216/Alfred-AI-Student-Assistant) | ASP.NET Core, SQLite, Ollama, multi-agent workflows, RAG, and local AI tooling. |
-| [SigmaNova](https://github.com/kennynguyen216/SigmaNova) | C++/OpenGL graphics programming, GLFW, GLAD, GLM, and real-time simulation foundations. (NOT CLOSE TO FINISHING AS OF RN) |
+| [SigmaNova](https://github.com/kennynguyen216/SigmaNova) | C++/OpenGL graphics programming, GLFW, GLAD, GLM, volumetric raymarching, and real-time simulation foundations. |
 
 ## Technical Interests
 
