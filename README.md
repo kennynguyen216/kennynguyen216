@@ -6,9 +6,10 @@ Most of my projects start off as an outlandish idea from which I try my best to 
 
 ## What I'm Working On
 
-### SigmaNova
+### SigmaNova (work in progress latest live render)
 
-<img width="1914" height="970" alt="volumetricGasdemo" src="https://github.com/user-attachments/assets/9ba18ee6-ee15-4e51-9af3-84df13bcb99c" />
+<img width="796" height="602" alt="livetuningdemo" src="https://github.com/user-attachments/assets/fbf4e86a-a1ec-46ff-8978-f6a81c7b0be3" />
+
 
 SigmaNova is a C++/OpenGL supernova visualization project focused on real-time graphics, shaders, volumetric rendering, and physically inspired simulation. The current build renders a procedural red-giant gas volume above a mesh-rendered spacetime fabric, with camera-controlled rays, raymarched density, value-noise gas, corona glow, and additive blending over the grid.
 
