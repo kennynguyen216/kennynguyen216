@@ -2,28 +2,47 @@
 
 I'm a rising senior who loves to build things for the sake of just building. I am especially interested in software that connects to something visual, physical, or interactive: computer vision tools, Arduino prototypes, AI assistants, game systems, graphics experiments, and simulation projects.
 
-Most of my projects start off as an outlandish idea from which I try my best to put forth into reality. 
+Most of my projects start off as an outlandish idea from which I try my best to put forth into reality.
 
 ## What I'm Working On
 
-### SigmaNova (work in progress latest live render)
+### SigmaNova
 
-<img width="796" height="602" alt="livetuningdemo" src="https://github.com/user-attachments/assets/fbf4e86a-a1ec-46ff-8978-f6a81c7b0be3" />
+[![SigmaNova live gas tuning demo](assets/captures/sigmanova-live-tuning-demo.gif)](https://github.com/kennynguyen216/SigmaNova)
 
-
-SigmaNova is a C++/OpenGL supernova visualization project focused on real-time graphics, shaders, volumetric rendering, and physically inspired simulation. The current build renders a procedural red-giant gas volume above a mesh-rendered spacetime fabric, with camera-controlled rays, raymarched density, value-noise gas, corona glow, and additive blending over the grid.
+SigmaNova is a C++/OpenGL supernova visualization project focused on real-time graphics, shaders, volumetric rendering, and physically inspired simulation. The current build renders a procedural red-supergiant gas volume with camera-controlled rays, raymarched density, value-noise gas, absorption/transmittance, tone mapping, performance-optimized procedural noise, a procedural starfield, and a live keyboard-controlled tuning HUD.
 
 ### Employment
 
 I am also looking for software engineering opportunities where I can keep building practical systems across graphics, simulation, AI tools, hardware, backend development, or interactive software.
 
+## Aestas Mirabilis
+
+Aestas Mirabilis is a summer challenge between me and my friends: each of us has to build five projects before the summer ends.
+
+For me, I love building cool stuff. A lot of these projects started in areas I had barely touched before: Arduino hardware, C++ graphics programming, ray tracing, haptics, computer vision, and real-time simulation. That is the point. I like stepping into unfamiliar territory, figuring things out as I go, and turning the learning process into something real.
+
+My five projects are:
+
+| Project | Status |
+|---|---|
+| [JARVIS](https://github.com/kennynguyen216/Jarvis) | Finished |
+| [Ray Tracer](https://github.com/kennynguyen216/raytracer) | Finished, with room to expand |
+| [Recoil System](https://github.com/kennynguyen216/Recoil) | Finished |
+| Non-Euclidean Demo in Unreal Engine | Planned / In Progress |
+| [SigmaNova](https://github.com/kennynguyen216/SigmaNova) | In Progress |
+
+The goal is simple: create cool projects, even when I have never done anything remotely close to them before. I enjoy grinding to make my projects real, learning fast, and turning unfamiliar ideas into finished work.
+
 ## Featured Projects
 
 | Project | Focus |
 |---|---|
-| [Jarvis Vision Assistant](https://github.com/kennynguyen216/Jarvis) | AI vision, voice control, OpenCV, Gemini, and Arduino pan/tilt control. |
-| [Alfred AI Student Assistant](https://github.com/kennynguyen216/Alfred-AI-Student-Assistant) | ASP.NET Core, SQLite, Ollama, multi-agent workflows, RAG, and local AI tooling. |
 | [SigmaNova](https://github.com/kennynguyen216/SigmaNova) | C++/OpenGL graphics programming, GLFW, GLAD, GLM, volumetric raymarching, and real-time simulation foundations. |
+| [Jarvis Vision Assistant](https://github.com/kennynguyen216/Jarvis) | AI vision, voice control, OpenCV, Gemini, and Arduino pan/tilt control. |
+| [Haptic Recoil Feedback System](https://github.com/kennynguyen216/Recoil) | Hardware prototyping, serial communication, haptics, OCR, and real-time input. |
+| [C++ Ray Tracer](https://github.com/kennynguyen216/raytracer) | C++, CMake, recursive ray tracing, materials, antialiasing, defocus blur, and image generation. |
+| [Alfred AI Student Assistant](https://github.com/kennynguyen216/Alfred-AI-Student-Assistant) | ASP.NET Core, SQLite, Ollama, multi-agent workflows, RAG, and local AI tooling. |
 
 ## Technical Interests
 
@@ -42,6 +61,6 @@ Arduino    OpenCV     SQLite      ASP.NET Core
 
 ## Current Direction
 
-Right now I am building projects for the sake of building projects and expanding my craft. 
+Right now I am building projects for the sake of building projects and expanding my craft.
 
 I am currently spending more time with C++, graphics programming, and real-time simulation.
