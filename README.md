@@ -8,9 +8,9 @@ Most of my projects start off as an outlandish idea from which I try my best to 
 
 ### SigmaNova
 
-[![SigmaNova live gas tuning demo](assets/captures/sigmanova-live-tuning-demo.gif)](https://github.com/kennynguyen216/SigmaNova)
+[![SigmaNova supernova remnant demo](assets/captures/sigmanova-remnant-demo.gif)](https://github.com/kennynguyen216/SigmaNova)
 
-SigmaNova is a C++/OpenGL supernova visualization project focused on real-time graphics, shaders, volumetric rendering, and physically inspired simulation. The current build renders a procedural red-supergiant gas volume with camera-controlled rays, raymarched density, value-noise gas, absorption/transmittance, tone mapping, performance-optimized procedural noise, a procedural starfield, and a live keyboard-controlled tuning HUD.
+SigmaNova is a C++/OpenGL supernova visualization project focused on real-time graphics, shaders, volumetric rendering, and physically inspired simulation. The current build stages a red-supergiant-inspired volumetric star through collapse, flash, and an expanding cooling remnant with raymarched gas density, emission, absorption/transmittance, tone mapping, procedural noise, cyan ionized edges, magenta/violet nebula gas, and a procedural starfield.
 
 ### Employment
 
@@ -38,7 +38,7 @@ The goal is simple: create cool projects, even when I have never done anything r
 
 | Project | Focus |
 |---|---|
-| [SigmaNova](https://github.com/kennynguyen216/SigmaNova) | C++/OpenGL graphics programming, GLFW, GLAD, GLM, volumetric raymarching, and real-time simulation foundations. |
+| [SigmaNova](https://github.com/kennynguyen216/SigmaNova) | C++/OpenGL graphics programming, GLSL, volumetric raymarching, procedural gas, shader optimization, and staged supernova visuals. |
 | [Jarvis Vision Assistant](https://github.com/kennynguyen216/Jarvis) | AI vision, voice control, OpenCV, Gemini, and Arduino pan/tilt control. |
 | [Haptic Recoil Feedback System](https://github.com/kennynguyen216/Recoil) | Hardware prototyping, serial communication, haptics, OCR, and real-time input. |
 | [C++ Ray Tracer](https://github.com/kennynguyen216/raytracer) | C++, CMake, recursive ray tracing, materials, antialiasing, defocus blur, and image generation. |
