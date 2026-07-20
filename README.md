@@ -10,7 +10,7 @@ Most of my projects start off as an outlandish idea from which I try my best to 
 
 [![SigmaNova supernova remnant demo](assets/captures/sigmanova-remnant-demo.gif)](https://github.com/kennynguyen216/SigmaNova)
 
-SigmaNova is a C++/OpenGL supernova visualization project focused on real-time graphics, shaders, volumetric rendering, and physically inspired simulation. The current build stages a red-supergiant-inspired volumetric star through collapse, flash, and an expanding cooling remnant with raymarched gas density, emission, absorption/transmittance, tone mapping, procedural noise, cyan ionized edges, magenta/violet nebula gas, and a procedural starfield.
+SigmaNova is a C++/OpenGL supernova visualization project focused on real-time graphics, shaders, and volumetric rendering. The finished Version 1 stages a red-supergiant-inspired star through collapse, flash, and an expanding cooling remnant with asymmetric ejecta lobes, magenta/cyan procedural gas, HDR bloom, and a compact pulsar embedded behind the foreground volume.
 
 ### Employment
 
@@ -30,7 +30,7 @@ My five projects are:
 | [Ray Tracer](https://github.com/kennynguyen216/raytracer) | Finished, with room to expand |
 | [Recoil System](https://github.com/kennynguyen216/Recoil) | Finished |
 | Non-Euclidean Demo in Unreal Engine | Planned / In Progress |
-| [SigmaNova](https://github.com/kennynguyen216/SigmaNova) | In Progress |
+| [SigmaNova](https://github.com/kennynguyen216/SigmaNova) | Finished, with post-MVP ideas remaining |
 
 The goal is simple: create cool projects, even when I have never done anything remotely close to them before. I enjoy grinding to make my projects real, learning fast, and turning unfamiliar ideas into finished work.
 
@@ -38,7 +38,7 @@ The goal is simple: create cool projects, even when I have never done anything r
 
 | Project | Focus |
 |---|---|
-| [SigmaNova](https://github.com/kennynguyen216/SigmaNova) | C++/OpenGL graphics programming, GLSL, volumetric raymarching, procedural gas, shader optimization, and staged supernova visuals. |
+| [SigmaNova](https://github.com/kennynguyen216/SigmaNova) | C++/OpenGL, GLSL volumetric raymarching, procedural ejecta, HDR bloom, GPU profiling, and staged supernova visuals. |
 | [Jarvis Vision Assistant](https://github.com/kennynguyen216/Jarvis) | AI vision, voice control, OpenCV, Gemini, and Arduino pan/tilt control. |
 | [Haptic Recoil Feedback System](https://github.com/kennynguyen216/Recoil) | Hardware prototyping, serial communication, haptics, OCR, and real-time input. |
 | [C++ Ray Tracer](https://github.com/kennynguyen216/raytracer) | C++, CMake, recursive ray tracing, materials, antialiasing, defocus blur, and image generation. |
