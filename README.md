@@ -2,7 +2,7 @@
 
 Rising senior at LSU studying Computer Science. I build things that are
 visual, physical, or interactive: graphics experiments, AI agents,
-hardware prototypes, and game systems. Seeking **Summer 2027 SWE internships and full-time roles**.
+hardware prototypes, and game systems. Seeking **2027 Full Times Roles or Internships**.
 
 ## What I'm Building Now
 
