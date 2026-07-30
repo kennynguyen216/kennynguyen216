@@ -1,41 +1,65 @@
-# Hi, I'm Kennedy
+<div align="center">
 
-Rising senior at LSU studying Computer Science. I build things that are
-visual, physical, or interactive: graphics experiments, AI agents,
-hardware prototypes, and game systems. Seeking **2027 Full Times Roles or Internships**.
+# Kennedy Nguyen
 
-## What I'm Building Now
+**Computer Science @ LSU · Graphics · AI Systems · Hardware · Interactive Technology**
+
+I build software you can see, interact with, or connect to the physical world.
+
+[LinkedIn](https://www.linkedin.com/in/kennedynguyen216) · [Featured Work](#featured-work)
+
+*Open to 2027 software engineering roles and internships.*
+
+</div>
+
+## About Me
+
+- B.S. Computer Science candidate at Louisiana State University, Class of 2027.
+- Interested in graphics and rendering, simulation, applied AI, computer vision, and human-computer interaction.
+- Most at home turning ambitious ideas into working prototypes, then profiling, documenting, and refining them.
+
+## Featured Work
 
 <p align="center">
   <a href="https://github.com/kennynguyen216/SigmaNova">
-    <img src="https://github.com/kennynguyen216/SigmaNova/raw/master/assets/captures/supernova-remnant-demo.gif" width="600" alt="SigmaNova supernova remnant demo">
+    <img src="./assets/captures/sigmanova-remnant-demo.gif" width="720" alt="SigmaNova procedural supernova collapsing into a colorful nebular remnant">
   </a>
 </p>
 
-### SigmaNova
+### [SigmaNova](https://github.com/kennynguyen216/SigmaNova)
 
-**[SigmaNova](https://github.com/kennynguyen216/SigmaNova)** is a completed
-C++/OpenGL visualization that stages a procedural red-supergiant-inspired
-star through collapse, a full-screen flash, asymmetric ejecta expansion,
-a cooling nebular remnant, and the appearance of a compact pulsar.
+A real-time C++/OpenGL visualization that stages a procedural red supergiant through collapse, flash, asymmetric ejecta expansion, and a cooling nebular remnant.
 
-The renderer combines volumetric raymarching, procedural FBM/value noise,
-emission and absorption, HDR bloom, tone mapping, and distance-faded pulsar
-illumination. I optimized its raymarching performance by **3.5x** and built a
-GPU-profiling pipeline with configurable volume resolution and non-blocking
-timer queries.
+- Built a volumetric ray marcher with procedural FBM noise, emission and absorption, HDR bloom, tone mapping, and pulsar illumination.
+- Reduced initial frame time from about **24.0 ms to 6.84 ms** in the first shader optimization pass.
+- Added non-blocking GPU timestamp queries, dynamic volume resolution, and pass-level performance reporting.
 
-## Featured Projects
+`C++` `OpenGL` `GLSL` `CMake` `GPU Profiling`
 
-| Project | What It Is |
-|---------|------------|
-| [SigmaNova](https://github.com/kennynguyen216/SigmaNova) | Real-time volumetric supernova renderer - C++, OpenGL, GLSL |
-| [C++ Ray Tracer](https://github.com/kennynguyen216/raytracer) | CPU ray tracer with materials, antialiasing, and defocus blur |
-| [Alfred](https://github.com/kennynguyen216/Alfred-AI-Student-Assistant) | Local multi-agent AI assistant - C#, ASP.NET, RAG, Ollama |
-| [Jarvis](https://github.com/kennynguyen216/Jarvis) | Voice-controlled vision assistant - Python, OpenCV, Gemini, Arduino |
-| [Haptic Recoil System](https://github.com/kennynguyen216/Recoil) | Hardware prototype combining OCR, serial communication, and haptic feedback |
+## More Projects
 
-## Languages & Tools
+| Project | What I built | Core technologies |
+|---|---|---|
+| **[3 Minutes to Rage](https://github.com/liangricky7/tspmo3-3MinutesToRage)** | A fast-paced hackathon game with microphone-driven mechanics; contributed gameplay and player-feedback systems. | Unity, C# |
+| **[Jarvis](https://github.com/kennynguyen216/Jarvis)** | A voice-controlled vision assistant that routes speech into camera movement, scene analysis, and spoken responses. | Python, OpenCV, Gemini, Arduino |
+| **[C++ Ray Tracer](https://github.com/kennynguyen216/raytracer)** | A renderer built from first principles with recursive scattering, metal and dielectric materials, antialiasing, and defocus blur. | C++, CMake |
+| **[Haptic Recoil System](https://github.com/kennynguyen216/Recoil)** | A hardware prototype that translates mouse input and OCR-detected weapon profiles into timed Arduino-controlled haptic feedback. | Python, Arduino, OpenCV, PySerial |
+| **[Alfred](https://github.com/kennynguyen216/Alfred-AI-Student-Assistant)** | A local-first multi-agent student assistant with document, email, and calendar tools backed by a local model. | C#, ASP.NET Core, SQLite, Ollama |
+| **[NGMI](https://github.com/kennynguyen216/ProjectNGMI)** | A multi-agent code evaluator that compiles C# submissions, analyzes complexity, and identifies edge cases. | C#, Roslyn, ASP.NET Core, SQLite |
 
-C++ · C# · Python · JavaScript · OpenGL · GLSL · CMake · Git ·
-ASP.NET Core · Unity · Arduino · OpenCV · SQLite · SQL
+## Technical Toolbox
+
+**Graphics:** C++, OpenGL, GLSL, CMake<br>
+**AI and backend:** C#, Python, ASP.NET Core, agent workflows, RAG, Ollama<br>
+**Interactive systems:** Unity, Arduino, OpenCV, PySerial<br>
+**Data and tools:** SQL, SQLite, Git, JavaScript
+
+## Currently Exploring
+
+- Real-time rendering and GPU performance analysis
+- Simulation-driven visual effects
+- AI tools that connect software reasoning with real-world inputs
+
+---
+
+The best way to reach me is on **[LinkedIn](https://www.linkedin.com/in/kennedynguyen216)**.
