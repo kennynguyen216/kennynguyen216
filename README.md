@@ -18,7 +18,7 @@ I build real-time systems you can see, feel, and interact with.
 
 <p align="center">
   <a href="https://github.com/kennynguyen216/Mirabilis/releases/tag/v0.1.0-bhop-demo">
-    <img src="./assets/captures/mirabilis-bhop-demo.gif" width="760" alt="Mirabilis Source-style bunny-hop movement demo with live tuning controls and speed telemetry">
+    <img src="./assets/captures/mirabilis-bhop-demo.gif" width="720" alt="Mirabilis Source-style bunny-hop movement demo with live tuning controls and speed telemetry">
   </a>
 </p>
 
@@ -40,7 +40,7 @@ Mirabilis is a real-time recursive renderer I am building in Vulkan. Its first p
 
 <p align="center">
   <a href="https://github.com/kennynguyen216/SigmaNova">
-    <img src="./assets/captures/sigmanova-remnant-demo.gif" width="560" alt="SigmaNova procedural supernova collapsing into a colorful nebular remnant">
+    <img src="./assets/captures/sigmanova-remnant-demo.gif" width="480" alt="SigmaNova procedural supernova collapsing into a colorful nebular remnant">
   </a>
 </p>
 
