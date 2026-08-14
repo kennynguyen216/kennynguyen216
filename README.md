@@ -58,10 +58,7 @@ A real-time C++/OpenGL visualization that stages a procedural red supergiant thr
 |---|---|---|
 | **[3 Minutes to Rage](https://github.com/liangricky7/tspmo3-3MinutesToRage)** | A fast-paced hackathon game with microphone-driven mechanics; contributed gameplay and player-feedback systems. | Unity, C# |
 | **[Jarvis](https://github.com/kennynguyen216/Jarvis)** | A voice-controlled vision assistant that routes speech into camera movement, scene analysis, and spoken responses. | Python, OpenCV, Gemini, Arduino |
-| **[C++ Ray Tracer](https://github.com/kennynguyen216/raytracer)** | A renderer built from first principles with recursive scattering, metal and dielectric materials, antialiasing, and defocus blur. | C++, CMake |
-| **[Haptic Recoil System](https://github.com/kennynguyen216/Recoil)** | A hardware prototype that translates mouse input and OCR-detected weapon profiles into timed Arduino-controlled haptic feedback. | Python, Arduino, OpenCV, PySerial |
 | **[Alfred](https://github.com/kennynguyen216/Alfred-AI-Student-Assistant)** | A local-first multi-agent student assistant with document, email, and calendar tools backed by a local model. | C#, ASP.NET Core, SQLite, Ollama |
-| **[NGMI](https://github.com/kennynguyen216/ProjectNGMI)** | A multi-agent code evaluator that compiles C# submissions, analyzes complexity, and identifies edge cases. | C#, Roslyn, ASP.NET Core, SQLite |
 
 ## About Me
 
