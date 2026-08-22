@@ -6,7 +6,7 @@
 
 I build real-time systems you can see, feel, and interact with.
 
-[LinkedIn](https://www.linkedin.com/in/kennedynguyen216) &nbsp;&middot;&nbsp; [Current Build](#currently-building) &nbsp;&middot;&nbsp; [Selected Work](#selected-work)
+[Portfolio](https://kennynguyen216.github.io/portfolio/) &nbsp;&middot;&nbsp; [LinkedIn](https://www.linkedin.com/in/kennedynguyen216) &nbsp;&middot;&nbsp; [Current Build](#currently-building) &nbsp;&middot;&nbsp; [Selected Work](#selected-work)
 
 *Open to 2027 software engineering roles and internships.*
 
@@ -24,15 +24,15 @@ I build real-time systems you can see, feel, and interact with.
 
 <p align="center"><sub><strong>v0.1.0 bhop demo</strong> &mdash; click the preview to watch the full-resolution release video</sub></p>
 
-Mirabilis is a real-time recursive renderer I am building in Vulkan. Its first playable milestone starts with the feel: a deterministic movement layer inspired by Source-engine strafing and bunny hopping.
+Mirabilis is a C++ Vulkan-based real-time engine prototype focused on editor-authored scenes, Source/Quake-style movement, and momentum-preserving linked portals.
 
-- Runs movement on a fixed **120 Hz** simulation with ground and air acceleration.
-- Supports buffered jumps, scroll-wheel bhopping, and high-speed air control.
-- Exposes live movement tuning and speed telemetry alongside a procedural test arena.
+- Implements GPU mesh/material pipelines, glTF/GLB scene loading, command buffers, descriptor sets, and swapchain presentation.
+- Provides an ImGui scene editor with hierarchical transforms, inspector/gizmos, editable colliders, and JSON persistence.
+- Combines fixed-**120 Hz** Source/Quake-style movement with stencil-mask portal rendering, wall-opening collision, and momentum-preserving traversal.
 
-`C++` `Vulkan` `SDL2` `ImGui` `CMake` `Real-Time Simulation`
+`C++` `Vulkan` `GLSL` `SDL2` `ImGui` `ImGuizmo` `CMake` `Real-Time Simulation`
 
-**[Explore the repository](https://github.com/kennynguyen216/Mirabilis)** &nbsp;&middot;&nbsp; **[Watch the milestone demo](https://github.com/kennynguyen216/Mirabilis/releases/tag/v0.1.0-bhop-demo)** &nbsp;&middot;&nbsp; **[Download the 1080p MP4](https://github.com/kennynguyen216/Mirabilis/releases/download/v0.1.0-bhop-demo/bhopv1.mp4)**
+**[Explore the repository](https://github.com/kennynguyen216/Mirabilis)** &nbsp;&middot;&nbsp; **[Watch the latest milestone](https://kennynguyen216.github.io/portfolio/media/mirabilis-milestone2-demo.mp4)** &nbsp;&middot;&nbsp; **[View my portfolio](https://kennynguyen216.github.io/portfolio/)**
 
 ## Selected Work
 
@@ -63,6 +63,7 @@ A real-time C++/OpenGL visualization that stages a procedural red supergiant thr
 ## About Me
 
 - B.S. Computer Science candidate at Louisiana State University, Class of 2027.
+- Research Software Engineer at LSU CARTS, building AI-assisted crash analytics tools.
 - Interested in graphics and rendering, simulation, applied AI, computer vision, and human-computer interaction.
 - Most at home turning ambitious ideas into working prototypes, then profiling, documenting, and refining them.
 
@@ -75,4 +76,4 @@ A real-time C++/OpenGL visualization that stages a procedural red supergiant thr
 
 ---
 
-The best way to reach me is on **[LinkedIn](https://www.linkedin.com/in/kennedynguyen216)**.
+See more at **[my portfolio](https://kennynguyen216.github.io/portfolio/)** or reach me through **[LinkedIn](https://www.linkedin.com/in/kennedynguyen216)**.
