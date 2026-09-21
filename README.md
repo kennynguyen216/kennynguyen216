@@ -16,23 +16,21 @@ I build real-time systems you can see, feel, and interact with.
 
 ### [Mirabilis](https://github.com/kennynguyen216/Mirabilis)
 
-<p align="center">
-  <a href="https://github.com/kennynguyen216/Mirabilis/releases/tag/v0.1.0-bhop-demo">
-    <img src="./assets/captures/mirabilis-bhop-demo.gif" width="720" alt="Mirabilis Source-style bunny-hop movement demo with live tuning controls and speed telemetry">
-  </a>
-</p>
+| Before the shadow pass | After the shadow pass |
+|:---:|:---:|
+| [![Sponza before the Mirabilis shadow pass](https://raw.githubusercontent.com/kennynguyen216/Mirabilis/main/docs/media/mirabilis-before-shadows.png)](https://github.com/kennynguyen216/Mirabilis/blob/main/docs/media/mirabilis-before-shadows.mp4) | [![Sponza after the Mirabilis shadow pass](https://raw.githubusercontent.com/kennynguyen216/Mirabilis/main/docs/media/mirabilis-after-shadows.png)](https://github.com/kennynguyen216/Mirabilis/blob/main/docs/media/mirabilis-after-shadows.mp4) |
 
-<p align="center"><sub><strong>v0.1.0 bhop demo</strong> &mdash; click the preview to watch the full-resolution release video</sub></p>
+<p align="center"><sub>Click either frame to watch the corresponding walkthrough.</sub></p>
 
 Mirabilis is a C++ Vulkan-based real-time engine prototype focused on editor-authored scenes, Source/Quake-style movement, and momentum-preserving linked portals.
 
-- Implements GPU mesh/material pipelines, glTF/GLB scene loading, command buffers, descriptor sets, and swapchain presentation.
+- Implements GPU mesh/material pipelines, textured glTF/GLB scene loading, programmable shaders, and a real-time shadow pass shown in the Sponza scene above.
 - Provides an ImGui scene editor with hierarchical transforms, inspector/gizmos, editable colliders, and JSON persistence.
-- Combines fixed-**120 Hz** Source/Quake-style movement with stencil-mask portal rendering, wall-opening collision, and momentum-preserving traversal.
+- Combines fixed-**120 Hz** Source/Quake-style movement, timed courses, stencil-mask portal rendering, wall-opening collision, and momentum-preserving traversal.
 
 `C++` `Vulkan` `GLSL` `SDL2` `ImGui` `ImGuizmo` `CMake` `Real-Time Simulation`
 
-**[Explore the repository](https://github.com/kennynguyen216/Mirabilis)** &nbsp;&middot;&nbsp; **[Watch the latest milestone](https://kennynguyen216.github.io/portfolio/media/mirabilis-milestone2-demo.mp4)** &nbsp;&middot;&nbsp; **[View my portfolio](https://kennynguyen216.github.io/portfolio/)**
+**[Explore the repository](https://github.com/kennynguyen216/Mirabilis)** &nbsp;&middot;&nbsp; **[Watch the shadow pass](https://github.com/kennynguyen216/Mirabilis/blob/main/docs/media/mirabilis-after-shadows.mp4)** &nbsp;&middot;&nbsp; **[Watch the movement run](https://github.com/kennynguyen216/Mirabilis/blob/main/docs/media/mirabilis-movement-time-trial.mp4)** &nbsp;&middot;&nbsp; **[View my portfolio](https://kennynguyen216.github.io/portfolio/)**
 
 ## Selected Work
 
