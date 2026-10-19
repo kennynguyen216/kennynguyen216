@@ -22,17 +22,46 @@ I build real-time systems you can see, feel, and interact with.
 
 <p align="center"><sub>Click either frame to watch the corresponding walkthrough.</sub></p>
 
-Mirabilis is a C++ Vulkan-based real-time engine prototype focused on editor-authored scenes, Source/Quake-style movement, and momentum-preserving linked portals.
+Mirabilis is my C++20/Vulkan engine prototype, bringing together editor-authored scenes, Source/Quake-style movement, momentum-preserving player portals, Jolt physics, and C# gameplay scripting.
 
-- Implements GPU mesh/material pipelines, textured glTF/GLB scene loading, programmable shaders, and a real-time shadow pass shown in the Sponza scene above.
+- Implements GPU mesh/material pipelines, textured glTF/GLB scene loading, real-time shadows, ambient occlusion, and screen-space global illumination.
 - Provides an ImGui scene editor with hierarchical transforms, inspector/gizmos, editable colliders, and JSON persistence.
+- Integrates EnTT scene entities and Jolt rigid bodies with editor authoring, fixed-step simulation, interpolation, and Play/reset snapshots.
+- Hosts .NET 10 gameplay scripts with inspector-editable fields and live code reload: save C# during Play and keep the current scene, physics state, and supported script fields.
 - Combines fixed-**120 Hz** Source/Quake-style movement, timed courses, stencil-mask portal rendering, wall-opening collision, and momentum-preserving traversal.
 
-`C++` `Vulkan` `GLSL` `SDL2` `ImGui` `ImGuizmo` `CMake` `Real-Time Simulation`
+`C++20` `Vulkan` `GLSL` `EnTT` `Jolt Physics` `C# / .NET 10` `SDL2` `ImGui` `CMake`
 
 **[Explore the repository](https://github.com/kennynguyen216/Mirabilis)** &nbsp;&middot;&nbsp; **[Watch the shadow pass](https://github.com/kennynguyen216/Mirabilis/blob/main/docs/media/mirabilis-after-shadows.mp4)** &nbsp;&middot;&nbsp; **[Watch the movement run](https://github.com/kennynguyen216/Mirabilis/blob/main/docs/media/mirabilis-movement-time-trial.mp4)** &nbsp;&middot;&nbsp; **[View my portfolio](https://kennynguyen216.github.io/portfolio/)**
 
 ## Selected Work
+
+### [GEarth](https://github.com/liangricky7/GEarth)
+
+**[Three prize wins at Knight Hacks IX](https://devpost.com/software/diarockets):**
+
+- **BNY:** Financial Services Challenge
+- **AMD:** Best Use of AMD Technologies
+- **Neon:** Best Use of Neon
+
+A team-built AI society simulation connecting citizens, businesses, governments, trade, and diplomacy. A C# engine maintains the world while distributed Qwen3 inference drives agent decisions; a browser dashboard and native Vulkan viewer make the results explorable.
+
+My contributions:
+
+- Set up distributed Qwen3 inference across two NVIDIA DGX Spark systems and an AMD GPU.
+- Developed the native C++20/Vulkan replay viewer, recording and launcher tooling, and meadow and market-square environments for inspecting the simulated world.
+
+**Vulkan renderer highlights:**
+
+- **Materials and lighting:** GLSL physically based shading with normal maps, metallic/roughness and emissive textures, sun shadow maps, and point/spot lighting.
+- **Asset pipeline:** Static glTF/GLB scene loading, BC7-compressed DDS textures kept compressed on the GPU, mip selection, and camera/shadow visibility culling for imported environments such as Bistro.
+- **HDR and post-processing:** Exposure control, bloom, sun glare, ACES-style tone mapping, sRGB output, and FXAA anti-aliasing.
+- **Procedural environments:** Animated ocean waves and water reflections, plus GPU-generated rolling terrain, wind-bent grass, flowers, and moving cloud shadows. Distant wave detail is filtered to reduce visual aliasing.
+- **Simulation playback:** A globe view with recorded country state, night lights, cargo routes, and event overlays. Packaged `.gearth` recordings support pause, seek, and looping without rerunning model inference; the viewer can also follow checkpoints from a running simulation through the API.
+
+`C++20` `Vulkan` `GLSL` `C# / .NET` `Python` `Qwen3` `Distributed Inference` `Neon PostgreSQL`
+
+**[Repository](https://github.com/liangricky7/GEarth)** &nbsp;&middot;&nbsp; **[Renderer details](https://github.com/liangricky7/GEarth/blob/main/renderer/GRAPHICS.md)** &nbsp;&middot;&nbsp; **[Devpost and awards](https://devpost.com/software/diarockets)**
 
 ### [SigmaNova](https://github.com/kennynguyen216/SigmaNova)
 
@@ -67,7 +96,7 @@ A real-time C++/OpenGL visualization that stages a procedural red supergiant thr
 
 ## Technical Toolbox
 
-**Graphics and simulation:** C++, Vulkan, OpenGL, GLSL, CMake<br>
+**Graphics and simulation:** C++, Vulkan, OpenGL, GLSL, Jolt Physics, EnTT, CMake<br>
 **AI and backend:** C#, Python, ASP.NET Core, agent workflows, RAG, Ollama<br>
 **Interactive systems:** SDL2, Unity, Arduino, OpenCV, PySerial<br>
 **Data and tools:** SQL, SQLite, Git, JavaScript
