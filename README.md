@@ -2,66 +2,79 @@
 
 # Kennedy Nguyen
 
-**Computer Science @ LSU &middot; Graphics &middot; Simulation &middot; AI Systems &middot; Interactive Technology**
+**Graphics &middot; Engines &middot; Systems &middot; Applied AI** &nbsp;|&nbsp; Computer Science @ LSU, Class of 2027
 
-I build real-time systems you can see, feel, and interact with.
+I build real-time systems from the metal up: Vulkan engines, global illumination, and most recently a ray-traced game running on a GPU my team built in 24 hours.
 
-[Portfolio](https://kennynguyen216.github.io/portfolio/) &nbsp;&middot;&nbsp; [LinkedIn](https://www.linkedin.com/in/kennedynguyen216) &nbsp;&middot;&nbsp; [Current Build](#currently-building) &nbsp;&middot;&nbsp; [Selected Work](#selected-work)
+[Portfolio](https://kennynguyen216.github.io/portfolio/) &nbsp;&middot;&nbsp; [LinkedIn](https://www.linkedin.com/in/kennedynguyen216) &nbsp;&middot;&nbsp; [Email](mailto:kennedyn216@gmail.com)
 
-*Open to 2027 software engineering roles and internships.*
+*Open to 2027 new-grad roles in graphics, engines, GPU and systems software.*
 
 </div>
 
-## Currently Building
+## 2026 at a glance
 
-### [Mirabilis](https://github.com/kennynguyen216/Mirabilis)
+**Placed at 4 of 4 hackathons this year:**
+
+| Event | Result | Project |
+|---|---|---|
+| **HackUTD 2026** | 1st Place, NVIDIA Track | [KennyCraft](#kennycraft) |
+| **GeauxHack 2026** | 1st Place, Advanced (Top) Bracket | [FirstPrinciples](#firstprinciples) |
+| **KnightHacks IX** | 1st BNY, 1st Neon, 3rd AMD ($6K+) | [GEarth](#gearth) |
+| **WiCS Hackathon 2026** | 2nd Place, Advanced Bracket & Best Presentation | [3 Minutes to Rage](#more-projects) |
+
+## Featured work
+
+### [KennyCraft](https://github.com/Sweet-Rice/kennycraft-alpha)
+
+**Ray-traced Minecraft on a custom FPGA GPU, built by three people in 24 hours.** 1st Place, NVIDIA Track at HackUTD 2026.
+
+My teammate built the TPU, an 8-lane SIMD RISC-V processor with a hardware ray unit, on an Arty A7. I wrote everything that runs on it.
+
+- **Engine on a 32 KB budget:** Q16 fixed-point math (no FPU, no divider), voxel DDA ray tracing bit-exact with the hardware ray unit, chunk streaming from DDR3, mobs and a Nether, all with no malloc and 40 bytes of data memory to spare.
+- **0.73 &rarr; 405 fps** at 160&times;120 (cycle-accurate sim at 100 MHz; display-bound 60 fps on the board) through hardware&ndash;software co-design: a spill-free, branch-free SIMD kernel, ray setup overlapped with async hardware traversal, and core changes that cut a cycle from every instruction.
+- **Every optimization pixel-identical** to a plain C reference renderer, checked with golden-image tests.
+- **Nemotron agents in an on-chain economy:** villagers, a banker, a trader and builders using tool calls, with KennyCoin escrow settled on Solana devnet and dollars from Capital One's Nessie API.
+
+`C` `RISC-V` `SystemVerilog` `Verilator` `Vivado` `NVIDIA Nemotron` `Solana` `Python`
+
+### [FirstPrinciples](https://github.com/kennynguyen216/FirstPrinciples)
+
+**A cross-platform C++20 game engine and game, built in 42 hours.** 1st Place, Advanced (Top) Bracket at GeauxHack 2026.
+
+- **Engine:** Windows and macOS via Vulkan/Metal (SDL3 GPU), a Qt scene editor, ECS, hot-reloadable C++ scripts, P2P multiplayer and GPU meshlet culling: about 46K lines with tests and benchmarks.
+- **Memory and concurrency core** (written by hand): reserve/commit virtual-memory arenas, page-backed pool allocators, and a fiber job system with assembly context switching and guard-paged stacks.
+- **Ray-traced Schwarzschild black holes** with a photon ring, lensed accretion disk and gravitational redshift, driving the game's gravity-slingshot physics.
+- **Audio:** ray-cast occlusion with acoustic materials, room reverb, Doppler, and proximity voice chat (48 kHz Opus over encrypted UDP).
+
+`C++20` `SDL3 GPU` `Vulkan` `Metal` `GLSL` `Qt` `Jolt` `Opus`
+
+### [Mirabilis & Nox](https://github.com/kennynguyen216/Mirabilis)
 
 | Before the shadow pass | After the shadow pass |
 |:---:|:---:|
 | [![Sponza before the Mirabilis shadow pass](https://raw.githubusercontent.com/kennynguyen216/Mirabilis/main/docs/media/mirabilis-before-shadows.png)](https://github.com/kennynguyen216/Mirabilis/blob/main/docs/media/mirabilis-before-shadows.mp4) | [![Sponza after the Mirabilis shadow pass](https://raw.githubusercontent.com/kennynguyen216/Mirabilis/main/docs/media/mirabilis-after-shadows.png)](https://github.com/kennynguyen216/Mirabilis/blob/main/docs/media/mirabilis-after-shadows.mp4) |
 
-<p align="center"><sub>Click either frame to watch the corresponding walkthrough.</sub></p>
+<p align="center"><sub>Click either frame to watch the walkthrough.</sub></p>
 
-Mirabilis is my C++20/Vulkan engine prototype, bringing together editor-authored scenes, Source/Quake-style movement, momentum-preserving player portals, Jolt physics, and C# gameplay scripting.
+**My C++20/Vulkan engine, with Nox, a hybrid real-time global illumination renderer.**
 
-- Implements GPU mesh/material pipelines, textured glTF/GLB scene loading, real-time shadows, ambient occlusion, and screen-space global illumination.
-- Provides an ImGui scene editor with hierarchical transforms, inspector/gizmos, editable colliders, and JSON persistence.
-- Integrates EnTT scene entities and Jolt rigid bodies with editor authoring, fixed-step simulation, interpolation, and Play/reset snapshots.
-- Hosts .NET 10 gameplay scripts with inspector-editable fields and live code reload: save C# during Play and keep the current scene, physics state, and supported script fields.
-- Combines fixed-**120 Hz** Source/Quake-style movement, timed courses, stencil-mask portal rendering, wall-opening collision, and momentum-preserving traversal.
+- **Nox GI:** screen-space tracing, distance fields and a surface cache at a **7.19 ms** median frame time on an RTX 3060 Laptop GPU. Trimmed **~490 MiB** of GPU memory and compacted shadow acceleration structures from **278 to 130 MiB**.
+- **Engine:** glTF scenes with PBR, HDR, shadows and post-processing, an ImGui editor, EnTT ECS, Jolt physics, and .NET 10 C# scripts with live reload during Play.
+- **Movement:** fixed 120 Hz Source-style controls with stencil-masked, momentum-preserving portals.
 
-`C++20` `Vulkan` `GLSL` `EnTT` `Jolt Physics` `C# / .NET 10` `SDL2` `ImGui` `CMake`
+`C++20` `Vulkan` `GLSL` `EnTT` `Jolt` `C# / .NET 10` `SDL2` `ImGui`
 
-**[Explore the repository](https://github.com/kennynguyen216/Mirabilis)** &nbsp;&middot;&nbsp; **[Watch the shadow pass](https://github.com/kennynguyen216/Mirabilis/blob/main/docs/media/mirabilis-after-shadows.mp4)** &nbsp;&middot;&nbsp; **[Watch the movement run](https://github.com/kennynguyen216/Mirabilis/blob/main/docs/media/mirabilis-movement-time-trial.mp4)** &nbsp;&middot;&nbsp; **[View my portfolio](https://kennynguyen216.github.io/portfolio/)**
-
-## Selected Work
+**[Watch the shadow pass](https://github.com/kennynguyen216/Mirabilis/blob/main/docs/media/mirabilis-after-shadows.mp4)** &nbsp;&middot;&nbsp; **[Watch the movement run](https://github.com/kennynguyen216/Mirabilis/blob/main/docs/media/mirabilis-movement-time-trial.mp4)**
 
 ### [GEarth](https://github.com/liangricky7/GEarth)
 
-**[Three prize wins at Knight Hacks IX](https://devpost.com/software/diarockets):**
+**An AI society simulation of 1,100 LLM agents on a 3D globe.** 1st BNY, 1st Neon and 3rd AMD at KnightHacks IX ([Devpost](https://devpost.com/software/diarockets)).
 
-- **BNY:** Financial Services Challenge
-- **AMD:** Best Use of AMD Technologies
-- **Neon:** Best Use of Neon
+- Served Qwen3 with vLLM across two NVIDIA DGX Sparks and an AMD GPU at up to 96% GPU utilization.
+- Wrote the C++20/Vulkan replay viewer: PBR, shadow maps, HDR and bloom, procedural oceans and grass, and a globe with trade routes and events. A 17 MB simulation year compresses to a ~270 KB replay.
 
-A team-built AI society simulation connecting citizens, businesses, governments, trade, and diplomacy. A C# engine maintains the world while distributed Qwen3 inference drives agent decisions; a browser dashboard and native Vulkan viewer make the results explorable.
-
-My contributions:
-
-- Set up distributed Qwen3 inference across two NVIDIA DGX Spark systems and an AMD GPU.
-- Developed the native C++20/Vulkan replay viewer, recording and launcher tooling, and meadow and market-square environments for inspecting the simulated world.
-
-**Vulkan renderer highlights:**
-
-- **Materials and lighting:** GLSL physically based shading with normal maps, metallic/roughness and emissive textures, sun shadow maps, and point/spot lighting.
-- **Asset pipeline:** Static glTF/GLB scene loading, BC7-compressed DDS textures kept compressed on the GPU, mip selection, and camera/shadow visibility culling for imported environments such as Bistro.
-- **HDR and post-processing:** Exposure control, bloom, sun glare, ACES-style tone mapping, sRGB output, and FXAA anti-aliasing.
-- **Procedural environments:** Animated ocean waves and water reflections, plus GPU-generated rolling terrain, wind-bent grass, flowers, and moving cloud shadows. Distant wave detail is filtered to reduce visual aliasing.
-- **Simulation playback:** A globe view with recorded country state, night lights, cargo routes, and event overlays. Packaged `.gearth` recordings support pause, seek, and looping without rerunning model inference; the viewer can also follow checkpoints from a running simulation through the API.
-
-`C++20` `Vulkan` `GLSL` `C# / .NET` `Python` `Qwen3` `Distributed Inference` `Neon PostgreSQL`
-
-**[Repository](https://github.com/liangricky7/GEarth)** &nbsp;&middot;&nbsp; **[Renderer details](https://github.com/liangricky7/GEarth/blob/main/renderer/GRAPHICS.md)** &nbsp;&middot;&nbsp; **[Devpost and awards](https://devpost.com/software/diarockets)**
+`C++20` `Vulkan` `GLSL` `Python` `vLLM` `Qwen3` `Neon PostgreSQL`
 
 ### [SigmaNova](https://github.com/kennynguyen216/SigmaNova)
 
@@ -71,36 +84,34 @@ My contributions:
   </a>
 </p>
 
-A real-time C++/OpenGL visualization that stages a procedural red supergiant through collapse, flash, asymmetric ejecta expansion, and a cooling nebular remnant.
+A real-time volumetric supernova: a procedural red supergiant collapses, flashes and expands into a cooling nebula. Ray marching sped up from **24.0 ms to 6.84 ms** through profiling.
 
-- Built a volumetric ray marcher with procedural FBM noise, emission and absorption, HDR bloom, tone mapping, and pulsar illumination.
-- Cut initial frame time from about **24.0 ms to 6.84 ms** in the first shader optimization pass.
-- Added non-blocking GPU timestamp queries, dynamic volume resolution, and pass-level performance reporting.
+`C++` `OpenGL` `GLSL` `GPU Profiling`
 
-`C++` `OpenGL` `GLSL` `CMake` `GPU Profiling`
+## More projects
 
-## More Projects
-
-| Project | What I built | Core technologies |
+| Project | What it is | Built with |
 |---|---|---|
-| **[3 Minutes to Rage](https://github.com/liangricky7/tspmo3-3MinutesToRage)** | A fast-paced hackathon game with microphone-driven mechanics; contributed gameplay and player-feedback systems. | Unity, C# |
-| **[Jarvis](https://github.com/kennynguyen216/Jarvis)** | A voice-controlled vision assistant that routes speech into camera movement, scene analysis, and spoken responses. | Python, OpenCV, Gemini, Arduino |
-| **[Alfred](https://github.com/kennynguyen216/Alfred-AI-Student-Assistant)** | A local-first multi-agent student assistant with document, email, and calendar tools backed by a local model. | C#, ASP.NET Core, SQLite, Ollama |
+| **[3 Minutes to Rage](https://github.com/liangricky7/tspmo3-3MinutesToRage)** | Microphone-driven party game; 2nd Place and Best Presentation at WiCS 2026. | Unity, C# |
+| **[Alfred](https://github.com/kennynguyen216/Alfred-AI-Student-Assistant)** | Local-first multi-agent student assistant with document, email and calendar tools. | C#, ASP.NET Core, SQLite, Ollama |
+| **[Jarvis](https://github.com/kennynguyen216/Jarvis)** | Voice-controlled vision assistant driving a camera, scene analysis and spoken replies. | Python, OpenCV, Gemini, Arduino |
 
-## About Me
+## Experience
 
-- B.S. Computer Science candidate at Louisiana State University, Class of 2027.
-- Research Software Engineer at LSU CARTS, building AI-assisted crash analytics tools.
-- Interested in graphics and rendering, simulation, applied AI, computer vision, and human-computer interaction.
-- Most at home turning ambitious ideas into working prototypes, then profiling, documenting, and refining them.
+- **Software Engineer Intern, LSU CARTS** (Jun. 2026 &ndash; present): shipped a production C# agent that lets Louisiana DOTD engineers query statewide crash data in plain English, using RAG text-to-SQL with self-hosted LLMs; cut latency 44%.
+- **Undergraduate AI/ML Researcher, LSU ATHENA Lab** (Sep. 2026 &ndash; present): 98.0% macro F1 fine-tuning a vision transformer on an NVIDIA DGX Spark; caught train/test leakage in the dataset.
 
-## Technical Toolbox
+## Toolbox
 
-**Graphics and simulation:** C++, Vulkan, OpenGL, GLSL, Jolt Physics, EnTT, CMake<br>
-**AI and backend:** C#, Python, ASP.NET Core, agent workflows, RAG, Ollama<br>
-**Interactive systems:** SDL2, Unity, Arduino, OpenCV, PySerial<br>
-**Data and tools:** SQL, SQLite, Git, JavaScript
+**Graphics and engines:** C++20, Vulkan, OpenGL, SDL3 GPU, GLSL, ray tracing, global illumination, ECS, Jolt<br>
+**Systems and hardware:** C, RISC-V, SystemVerilog, SIMD, fixed-point, FPGA (Vivado, Verilator), job systems, custom allocators<br>
+**AI and backend:** C#, Python, ASP.NET Core, PyTorch, vLLM, NVIDIA Nemotron, RAG, Qdrant, SQLite<br>
+**Tools:** Git, CMake, Premake, Docker, Perforce, OpenTelemetry, Google Cloud
 
 ---
 
-See more at **[my portfolio](https://kennynguyen216.github.io/portfolio/)** or reach me through **[LinkedIn](https://www.linkedin.com/in/kennedynguyen216)**.
+<div align="center">
+
+More at **[my portfolio](https://kennynguyen216.github.io/portfolio/)** &nbsp;&middot;&nbsp; Let's talk on **[LinkedIn](https://www.linkedin.com/in/kennedynguyen216)**
+
+</div>
